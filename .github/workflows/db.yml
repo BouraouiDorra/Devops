@@ -1,10 +1,10 @@
-name: End-to-End-test
-on: push 
+name: End-to-end-test
+on: push
 jobs: 
-  cypress-run
+  cypress-run:
     runs-on: ubuntu-22.04
-    steps:
-      - name: checkout 
-        uses: actions/chekout@v3
-      - name: cypress run
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
         uses: cypress-io/github-action@v5
